@@ -2,7 +2,6 @@
     border: none;
     color: white;
     background: blueviolet;
-  
     height: 48px;
     width: 80px;
     padding: 12px 20px;
@@ -10,6 +9,6 @@
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
+    margin: 0.5px 0.5px;
     cursor: pointer;
   }
