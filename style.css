@@ -2,7 +2,10 @@
     border: none;
     color: white;
     background: blueviolet;
-    padding: 15px 32px;
+  
+    height: 48px;
+    width: 80px;
+    padding: 12px 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
