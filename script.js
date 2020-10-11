@@ -24,6 +24,24 @@ function getOrder(order){
 
     var orderNumber = document.createTextNode(order);
     document.getElementById("text").appendChild(orderNumber);
+}
 
-
+function equation(){
+    var answer;
+    switch(order){
+        case "*":
+            answer = number1 * number2;
+            break;
+        case "/":
+            answer = number1 / number2;
+            break;
+        case "+":
+            answer = number1 + number2;
+            break;
+        case "-":
+            answer = number1 - number2;
+            break;
+    }
+    var answerText = document.createTextNode("=" + answer);
+    document.getElementById("text").appendChild(answerText);
 }
