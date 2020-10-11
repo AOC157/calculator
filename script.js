@@ -14,16 +14,16 @@ function getNumber(number){
         number2 *= 10;
         number2 += number
     }
-    var textNumber = document.createTextNode(number);
-    document.getElementById("text").appendChild(textNumber);
+    var numberText = document.createTextNode(number);
+    document.getElementById("text").appendChild(numberText);
 }
 
 function getOrder(order){
     orderFlag = true;
     this.order = order;
 
-    var orderNumber = document.createTextNode(order);
-    document.getElementById("text").appendChild(orderNumber);
+    var orderText = document.createTextNode(order);
+    document.getElementById("text").appendChild(orderText);
 }
 
 function equation(){
