@@ -14,11 +14,16 @@ function getNumber(number){
         number2 *= 10;
         number2 += number
     }
-    document.getElementById(number).style.backgroundColor = "red";
+    var textNumber = document.createTextNode(number);
+    document.getElementById("answer").appendChild(textNumber);
 }
 
 function getOrder(order){
     orderFlag = true;
     this.order = order;
+
+    var orderNumber = document.createTextNode(order);
+    document.getElementById("answer").appendChild(orderNumber);
+
 
 }
