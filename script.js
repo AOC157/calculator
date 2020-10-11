@@ -15,7 +15,7 @@ function getNumber(number){
         number2 += number
     }
     var textNumber = document.createTextNode(number);
-    document.getElementById("answer").appendChild(textNumber);
+    document.getElementById("text").appendChild(textNumber);
 }
 
 function getOrder(order){
@@ -23,7 +23,7 @@ function getOrder(order){
     this.order = order;
 
     var orderNumber = document.createTextNode(order);
-    document.getElementById("answer").appendChild(orderNumber);
+    document.getElementById("text").appendChild(orderNumber);
 
 
 }
