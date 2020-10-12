@@ -1,22 +1,36 @@
-var number1 = 0;
-var number2 = 0;
+var number1 = "";
+var number2 = "";
 
 var order;
+
+var equationFlag = false; 
 
 var orderFlag = false;
 
 function getNumber(number){
+    if(equationFlag){
+        document.getElementById("text").innerText = "";
+        equationFlag = false;
+        orderFlag = false;
+    }
     if(!orderFlag){
         number1 += number;
     }
     else{
-        number2 += number
+        number2 += number;
     }
     var numberText = document.createTextNode(number);
     document.getElementById("text").appendChild(numberText);
 }
 
 function getOrder(order){
+    if(equationFlag){
+        document.getElementById("text").innerHTML = "";
+        return;
+    }
+    if(orderFlag){
+        return;
+    }
     orderFlag = true;
     this.order = order;
 
@@ -25,6 +39,7 @@ function getOrder(order){
 }
 
 function equation(){
+    equationFlag = true;
     var answer;
     switch(order){
         case "*":
@@ -34,7 +49,7 @@ function equation(){
             answer = number1 / number2;
             break;
         case "+":
-            answer = number1 + number2;
+            answer = Number(number1) + Number(number2);
             break;
         case "-":
             answer = number1 - number2;
@@ -42,8 +57,6 @@ function equation(){
     }
     var answerText = document.createTextNode("=" + answer);
     document.getElementById("text").appendChild(answerText);
-}
-
-function dot(){
-
+    number1 = "";
+    number2 = "";
 }
