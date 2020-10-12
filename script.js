@@ -7,11 +7,9 @@ var orderFlag = false;
 
 function getNumber(number){
     if(!orderFlag){
-        number1 *= 10;
         number1 += number;
     }
     else{
-        number2 *= 10;
         number2 += number
     }
     var numberText = document.createTextNode(number);
@@ -44,4 +42,8 @@ function equation(){
     }
     var answerText = document.createTextNode("=" + answer);
     document.getElementById("text").appendChild(answerText);
+}
+
+function dot(){
+
 }
