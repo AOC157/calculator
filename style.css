@@ -12,7 +12,15 @@
     margin: 0.5px 0.5px;
     border-radius: 10%;
     cursor: pointer;
-  }
-  button:active{
+}
+
+button:active{
     background-color: crimson;
-  }
+}
+
+.p{
+  font-size: 30px;
+}
+
+
+
